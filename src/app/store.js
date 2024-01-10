@@ -10,3 +10,8 @@ export default configureStore({
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(cryptoApi.middleware, cryptoNewsApi.middleware),
 });
+
+
+//action - plain js object
+//reducer -> action pe switch case laga ke action perform karta hai
+// props drilling is main reason of react-redux 
